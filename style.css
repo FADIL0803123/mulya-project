@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1,6;
+    background-color: #fcf9f9;
+}
+h1,h2{
+    color: #0b2c6b;
+}
+
+.head {
+    position: relative;
+    /* Tambahkan padding jika perlu */
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e3e3e3;
+}
+
+.hubungi-kanan {
+    position: absolute;
+    right: 20px;
+    nav-down: 50px;
+    /* Sesuaikan top dan right sesuai kebutuhan */
+    display: inline-block;
+    padding: 12px 24px;
+    background: #5000fd;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.hubungi-kanan:hover {
+    background: #5000fd;
+    color: white;
+    text-decoration: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    background: rgba(249, 249, 249, 0.4);
+}
+.modal-content {
+    background: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    background-image: url('background/modal.jpg'); /* Ganti dengan nama file gambarmu */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Tambahkan warna transparan jika ingin teks tetap jelas */
+    background-color: rgba(255,255,255,0.85);
+    backdrop-filter: blur(2px);
+}
+.close {
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 0 1px 4px #f8f7f7;
+    transition: color 0.2s;
+}
+.close:hover {
+    color: #ff7f50;
+}
+.modal-content input,
+.modal-content textarea {
+    color: #fff;
+    background: rgba(11,44,107,0.7); /* biru transparan, bisa diganti sesuai selera */
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.modal-content input::placeholder,
+.modal-content textarea::placeholder {
+    color: #eee;
+}
+
+.modal-content label {
+    color: #fff;
+}
+
+.modal-content button[type="submit"] {
+    background: #0b2c6b;
+    color: #fff;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.modal-content button[type="submit"]:hover {
+    background: #ff7f50;
+}
+.modal-content h3 {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 4px #00000055;
+}
+.layanan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin: 32px 0;
+}
+.layanan-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0001;
+    padding: 24px 16px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.layanan-item:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 16px #0002;
+}
+.layanan-ikon {
+    font-size: 36px;
+    display: block;
+    margin-bottom: 12px;
+}
+.layanan-item h4 {
+    margin: 10px 0 8px 0;
+    color: #0b2c6b;
+}
+.layanan-item p {
+    color: #333;
+    font-size: 15px;
+}
+.testimoni-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin: 32px 0;
+}
+.testimoni-item {
+    background: #0b2c6b;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0002;
+    padding: 24px 18px;
+    font-style: italic;
+    position: relative;
+}
+.testimoni-nama {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffda79;
+}
+.kontak-biru {
+    background: #0b2c6b;
+    color: #fff;
+    text-align: center;
+    padding: 36px 16px 32px 16px;
+    margin-top: 32px;
+    border-radius: 12px;
+}
+.kontak-biru h3 {
+    color: #fff;
+    margin-bottom: 18px;
+}
+.kontak-sosmed {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.sosmed-link {
+    display: inline-flex;
+    align-items: center;
+    background: #fff;
+    color: #0b2c6b;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px #0001;
+}
+.sosmed-link:hover {
+    background: #ffda79;
+    color: #0b2c6b;
+}
+.sosmed-ikon {
+    font-size: 22px;
+    margin-right: 10px;
+}
+.sosmed-ikon svg {
+    display: block;
+    margin-right: 10px;
+    /* Jika ingin lebih besar: */
+    width: 28px;
+    height: 28px;
+}

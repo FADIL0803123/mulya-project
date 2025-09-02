@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="head">
+    <h1>Mulya</h1>
+    <h2>Solusi Teknologi Untuk Hidup Lebih Mudah</h2>
+    <p>Mulya adalah platform teknologi yang menyediakan berbagai solusi untuk mempermudah kehidupan sehari-hari.
+        Kami berkomitmen untuk menghadirkan inovasi yang dapat membantu individu dan bisnis dalam mengatasi tantangan modern.</p>
+         <a href="#" class="hubungi-kanan" id="openModal">Hubungi Kami</a>
+</header>
+<div id="modalHubungi" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <h3>Hubungi Kami</h3>
+    <form>
+      <label>Nama:</label><br>
+      <input type="text" required><br>
+      <label>Email:</label><br>
+      <input type="email" required><br>
+      <label>Pesan:</label><br>
+      <textarea required></textarea><br>
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+</div>
+    <section>
+        <h3>Layanan Kami</h3>
+        <div class="layanan-grid">
+            <div class="layanan-item">
+                <span class="layanan-ikon">💻</span>
+                <h4>Pengembangan Aplikasi</h4>
+                <p>Membuat aplikasi web & mobile sesuai kebutuhan Anda.</p>
+            </div>
+            <div class="layanan-item">
+                <span class="layanan-ikon">🛒</span>
+                <h4>Solusi E-commerce</h4>
+                <p>Bangun toko online profesional dan mudah digunakan.</p>
+            </div>
+            <div class="layanan-item">
+                <span class="layanan-ikon">📈</span>
+                <h4>Manajemen Proyek Digital</h4>
+                <p>Pendampingan proyek digital dari awal hingga selesai.</p>
+            </div>
+            <div class="layanan-item">
+                <span class="layanan-ikon">💡</span>
+                <h4>Konsultasi Teknologi</h4>
+                <p>Konsultasi solusi teknologi terbaik untuk bisnis Anda.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h3>Ulasan Pengguna</h3>
+        <div class="testimoni-grid">
+            <div class="testimoni-item">
+                <p>"Pelayanan Mulya sangat profesional dan responsif. Aplikasi yang dibuat sangat membantu bisnis saya!"</p>
+                <span class="testimoni-nama">– Budi, Pengusaha</span>
+            </div>
+            <div class="testimoni-item">
+                <p>"Solusi e-commerce dari Mulya mudah digunakan dan tampilannya menarik. Terima kasih tim Mulya!"</p>
+                <span class="testimoni-nama">– Sari, Pemilik Toko Online</span>
+            </div>
+            <div class="testimoni-item">
+                <p>"Konsultasi teknologi di Mulya sangat informatif dan membantu saya memilih teknologi yang tepat."</p>
+                <span class="testimoni-nama">– Andi, Freelancer</span>
+            </div>
+        </div>
+    </section>
+    <section class="kontak-biru">
+        <h3>Hubungi Kami di Sosial Media</h3>
+        <div class="kontak-sosmed">
+            <a href="https://wa.me/6282131386943" target="_blank" class="sosmed-link">
+                <span class="sosmed-ikon">
+                    <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="16" fill="#25D366"/>
+                        <path d="M23.5 19.5c-.3-.2-1.7-.8-2-1s-.5-.2-.7.1c-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.7.1-.1.2-.3.3-.5.1-.2.1-.4 0-.6s-.7-1.7-1-2.3c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.7.3-.2.2-.8.8-.8 2 0 1.2.8 2.4 1 2.7.2.3 1.6 2.5 3.8 3.4 2.2.9 2.2.6 2.6.6.4 0 1.3-.5 1.5-1 .2-.5.2-.9.1-1.1z" fill="#fff"/>
+                    </svg>
+                </span>
+                WhatsApp
+            </a>
+            <a href="https://instagram.com/maulana_fadil08" target="_blank" class="sosmed-link">
+                <span class="sosmed-ikon">📷</span> Instagram
+            </a>
+        </div>
+    </section>
+    <script>
+document.getElementById('openModal').onclick = function() {
+    document.getElementById('modalHubungi').style.display = 'block';
+};
+document.getElementById('closeModal').onclick = function() {
+    document.getElementById('modalHubungi').style.display = 'none';
+};
+window.onclick = function(event) {
+    if (event.target == document.getElementById('modalHubungi')) {
+        document.getElementById('modalHubungi').style.display = 'none';
+    }
+};
+</script>
+</body>
+</html>
